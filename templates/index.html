@@ -7,26 +7,37 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-<h1>Teste</h1>
-<h2>aassssss22222222222222sfasdf</h2>
-    <p>dfklsamçdfsicnouqwfejasecuoeicyerfchiuer</p>
-
+<h1>Analise de Circuitos</h1>
+<h2>Selecione tipo de circuito desejado:</h2>
+<h4>(escolha somente uma por vez)</h4>
     <form action="/send" method="POST">
-      <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Tensão da Fonte</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="nome"></textarea>
-        <div id="emailHelp" class="form-text">(V)</div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="RLs">
+        <label class="form-check-label" for="exampleCheck1">Circuito RL série</label>
       </div>
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="dc">
-        <label class="form-check-label" for="exampleCheck1">Circuito DC</label>
+        <input type="checkbox" class="form-check-input" id="exampleCheck2" name="RLp">
+        <label class="form-check-label" for="exampleCheck2">Circuito RL paralelo</label>
       </div>
-      <button type="submit" class="btn btn-secondary">Calcular</button>
-    </form>
 
-    <p>
-        <img src="../static/teste.png" class="rounded mx-auto d-block" alt="Grafico pedido">
-    </p>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck3" name="RCs">
+        <label class="form-check-label" for="exampleCheck3">Circuito RC série</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck4" name="RCp">
+        <label class="form-check-label" for="exampleCheck4">Circuito RC paralelo</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck5" name="RLCs">
+        <label class="form-check-label" for="exampleCheck5">Circuito RLC série</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck6" name="RLCp">
+        <label class="form-check-label" for="exampleCheck6">Circuito RLC paralelo</label>
+      </div>
+      <button type="submit" class="btn btn-secondary">Próximo</button>
+    </form>
 
 <script src="../static/js/bootstrap.bundle.min.js"></script>
 <script src="../static/script.js"></script>

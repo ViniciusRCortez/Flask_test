@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<h1>Analise de Circuitos</h1>
+<h2>Selecione sobre qual elemento é desejada a resposta:</h2>
+<h4>(escolha somente uma por vez)</h4>
+    <form action="/send" method="POST">
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="L">
+        <label class="form-check-label" for="exampleCheck1">Indutor</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck2" name="C">
+        <label class="form-check-label" for="exampleCheck2">Capacitor</label>
+      </div>
+      <button type="submit" class="btn btn-secondary">Próximo</button>
+    </form>
+
+<script src="../static/js/bootstrap.bundle.min.js"></script>
+<script src="../static/script.js"></script>
+</body>
+</html>
